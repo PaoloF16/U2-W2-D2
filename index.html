@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo_trasparente_bordo.png"
+              alt="xylogo"
+              width="60"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Saldi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Last Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recensioni</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="bg-body-tertiary rounded shadow-sm p-4 my-4">
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <h1 class="display-4 fw-light m-0">My Travels</h1>
+            <p class="lead m-0">- Feel the Freedom</p>
+          </div>
+
+          <div class="border-top pt-3 mt-3">
+            <h2 class="fs-3 fw-light">
+              <em>Scopri le destinazioni del momento!</em>
+            </h2>
+            <button type="button" class="btn btn-info btn-lg text-dark mt-3">
+              Prenota ora
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h3 class="mb-2">Saldi</h3>
+        <div class="row g-4">
+          <!-- row contenidore de i cards -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- 1col -->
+            <div class="card h-100 border border-3 border-info">
+              <img
+                src="./images/cuzco.jpg"
+                class="card-img-top"
+                alt="Destinazione"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuzco</h5>
+                <p class="card-text">Scopri questa città millenaria</p>
+                <a href="#" class="btn btn-info text-dark">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- 2col -->
+            <div class="card h-100 border border-3 border-info">
+              <img
+                src="./images/cuzco.jpg"
+                class="card-img-top"
+                alt="Destinazione"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuzco</h5>
+                <p class="card-text">Scopri questa città millenaria</p>
+                <a href="#" class="btn btn-info text-dark">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- 3col -->
+            <div class="card h-100 border border-3 border-info">
+              <img
+                src="./images/cuzco.jpg"
+                class="card-img-top"
+                alt="Destinazione"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuzco</h5>
+                <p class="card-text">Scopri questa città millenaria</p>
+                <a href="#" class="btn btn-info text-dark">Prenota</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <!-- 4col -->
+            <div class="card h-100 border border-3 border-info">
+              <img
+                src="./images/cuzco.jpg"
+                class="card-img-top"
+                alt="Destinazione"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cuzco</h5>
+                <p class="card-text">Scopri questa città millenaria</p>
+                <a href="#" class="btn btn-info text-dark">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h3 class="mb-2">Welcome Summer</h3>
+          <div class="row g-4">
+            <div class="col-6 col-lg-4"><!-- 1col -->
+              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
+                <img
+                  src="./images/cuzco.jpg"
+                  class="card-img-top"
+                  alt="Destinazione"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cuzco</h5>
+                  <p class="card-text">Scopri questa città millenaria</p>
+                  <a href="#" class="btn btn-info text-dark">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4"><!-- 2col -->
+              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
+                <img
+                  src="./images/cuzco.jpg"
+                  class="card-img-top"
+                  alt="Destinazione"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cuzco</h5>
+                  <p class="card-text">Scopri questa città millenaria</p>
+                  <a href="#" class="btn btn-info text-dark">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4"><!-- 3col -->
+              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
+                <img
+                  src="./images/cuzco.jpg"
+                  class="card-img-top"
+                  alt="Destinazione"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cuzco</h5>
+                  <p class="card-text">Scopri questa città millenaria</p>
+                  <a href="#" class="btn btn-info text-dark">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4"><!-- 4col -->
+              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
+                <img
+                  src="./images/cuzco.jpg"
+                  class="card-img-top"
+                  alt="Destinazione"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cuzco</h5>
+                  <p class="card-text">Scopri questa città millenaria</p>
+                  <a href="#" class="btn btn-info text-dark">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4"><!-- 5col -->
+              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
+                <img
+                  src="./images/cuzco.jpg"
+                  class="card-img-top"
+                  alt="Destinazione"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cuzco</h5>
+                  <p class="card-text">Scopri questa città millenaria</p>
+                  <a href="#" class="btn btn-info text-dark">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4"><!-- 6col -->
+              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
+                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
+                <img
+                  src="./images/cuzco.jpg"
+                  class="card-img-top"
+                  alt="Destinazione"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Cuzco</h5>
+                  <p class="card-text">Scopri questa città millenaria</p>
+                  <a href="#" class="btn btn-info text-dark">Prenota</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-5 py-4 bg-body-tertiary text-center">
+      <p class="mb-0">© 2026 My Travels</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+2
