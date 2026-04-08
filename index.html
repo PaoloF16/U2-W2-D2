@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap Demo</title>
+    <title>Eveline-R</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,15 +11,16 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="bg-light-subtle">
+    <!-- Navbar -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+          <a class="navbar-brand py-0" href="#home">
             <img
               src="./images/logo_trasparente_bordo.png"
-              alt="xylogo"
-              width="60"
+              alt="Eveline-R"
+              width="62"
             />
           </a>
 
@@ -27,42 +28,42 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 small">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Saldi</a>
+                <a class="nav-link" href="#saldi">Saldi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Welcome Summer</a>
+                <a class="nav-link" href="#welcome-summer">Welcome Summer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Last Summer</a>
+                <a class="nav-link" href="#last-minute">Last Minute</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Recensioni</a>
+                <a class="nav-link" href="#recensioni">Recensioni</a>
               </li>
             </ul>
 
-            <form class="d-flex" role="search">
+            <form class="d-flex gap-2" role="search">
               <input
-                class="form-control me-2"
+                class="form-control form-control-sm"
                 type="search"
-                placeholder="Search"
-                aria-label="Search"
+                placeholder="Cerca posti da sogno"
+                aria-label="Cerca posti da sogno"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+              <button class="btn btn-outline-danger btn-sm" type="submit">
+                Cerca
               </button>
             </form>
           </div>
@@ -70,201 +71,568 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container">
-        <div class="bg-body-tertiary rounded shadow-sm p-4 my-4">
-          <div class="d-flex align-items-center gap-3 flex-wrap">
-            <h1 class="display-4 fw-light m-0">My Travels</h1>
-            <p class="lead m-0">- Feel the Freedom</p>
+    <main id="home">
+      <!-- Hero -->
+      <section class="py-4 py-md-5">
+        <div class="container">
+          <div class="bg-body-tertiary rounded-3 p-4 p-md-5">
+            <div
+              class="d-flex flex-column flex-md-row align-items-center align-items-md-end gap-2 gap-md-0"
+            >
+              <h1
+                class="display-3 fw-light text-secondary-emphasis mb-0 text-center text-md-start"
+              >
+                Eveline-R
+              </h1>
+              <p
+                class="text-secondary mb-0 ms-md-2 small text-center text-md-start"
+              >
+                — Feel the Freedom
+              </p>
+            </div>
+
+            <hr class="my-3 my-md-4 text-secondary" />
+
+            <p
+              class="fs-3 fw-light fst-italic text-secondary-emphasis mb-4 text-center text-md-start"
+            >
+              Scopri le destinazioni più calde del momento!
+            </p>
+
+            <div class="text-center text-md-start">
+              <a
+                href="#"
+                class="btn btn-info text-white fw-bold px-4 px-md-5"
+              >
+                Prenota ora
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Saldi -->
+      <section id="saldi" class="pb-4">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h2 mb-0">Saldi</h2>
+            <button
+              class="btn btn-link text-info text-decoration-none p-0 small"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#saldiContent"
+              aria-expanded="true"
+              aria-controls="saldiContent"
+            >
+              Nascondi sezione
+            </button>
           </div>
 
-          <div class="border-top pt-3 mt-3">
-            <h2 class="fs-3 fw-light">
-              <em>Scopri le destinazioni del momento!</em>
-            </h2>
-            <button type="button" class="btn btn-info btn-lg text-dark mt-3">
-              Prenota ora
+          <div class="collapse show" id="saldiContent">
+            <div class="row g-3 g-md-4">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-info border-2">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-info border-2">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="card h-100 border-info border-2">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3 d-md-none d-lg-block">
+                <div class="card h-100 border-info border-2">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Welcome Summer -->
+      <section id="welcome-summer" class="py-4">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="h2 mb-0">Welcome Summer</h2>
+            <button
+              class="btn btn-link text-info text-decoration-none p-0 small"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#welcomeSummerContent"
+              aria-expanded="true"
+              aria-controls="welcomeSummerContent"
+            >
+              Nascondi sezione
+            </button>
+          </div>
+
+          <div class="collapse show" id="welcomeSummerContent">
+            <div class="row g-4">
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card h-100 shadow-lg border-0 position-relative travel-card welcome-card">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card h-100 shadow-lg border-0 position-relative travel-card welcome-card">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card h-100 shadow-lg border-0 position-relative travel-card welcome-card">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card h-100 shadow-lg border-0 position-relative travel-card welcome-card">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card h-100 shadow-lg border-0 position-relative travel-card welcome-card">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-6 col-md-6 col-lg-4 col-xl-2">
+                <div class="card h-100 shadow-lg border-0 position-relative travel-card welcome-card">
+                  <img
+                    src="./images/cuzco.jpg"
+                    class="card-img-top"
+                    alt="Titolo"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title mb-2">Titolo</h5>
+                    <p class="card-text small">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Officia et possimus aliquid deserunt veritatis natus ullam
+                      perspiciatis temporibus minima repudiandae!
+                    </p>
+                    <a href="#" class="btn btn-info btn-sm text-dark">
+                      Prenota
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Offerta del giorno -->
+      <section id="offerta-del-giorno" class="py-4 d-none d-md-block">
+        <div class="container">
+          <h2 class="h2 mb-3">Offerta del giorno</h2>
+
+          <div class="row align-items-center g-4">
+            <div class="col-md-8">
+              <img
+                src="./images/arequipa.jpg"
+                alt="Fushifaru Maldives"
+                class="img-fluid rounded shadow-sm w-100"
+              />
+            </div>
+            <div class="col-md-4">
+              <h3 class="display-4 fw-light lh-1 mb-2">Fushifaru Maldives</h3>
+              <p class="font-monospace small mb-3">15.01.2021–31.01.2021</p>
+              <p class="lead mb-3">
+                Ville a partire da 500 €,<br />
+                non fartele sfuggire!
+              </p>
+              <span class="badge text-bg-dark rounded-pill">Best offer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Last Minute -->
+      <section id="last-minute" class="py-4">
+        <div class="container">
+          <h2 class="h2 mb-3">Last Minute</h2>
+
+          <div class="row g-3 g-md-4">
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./images/huaraz.jpg"
+                alt="Last Minute 1"
+                class="img-fluid w-100 rounded shadow-sm"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./images/huaraz.jpg"
+                alt="Last Minute 2"
+                class="img-fluid w-100 rounded shadow-sm"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./images/huaraz.jpg"
+                alt="Last Minute 3"
+                class="img-fluid w-100 rounded shadow-sm"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./images/huaraz.jpg"
+                alt="Last Minute 4"
+                class="img-fluid w-100 rounded shadow-sm"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./images/huaraz.jpg"
+                alt="Last Minute 5"
+                class="img-fluid w-100 rounded shadow-sm"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <img
+                src="./images/huaraz.jpg"
+                alt="Last Minute 6"
+                class="img-fluid w-100 rounded shadow-sm"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recensioni -->
+      <section id="recensioni" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Dicono di noi</h2>
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/twbs/icons@1.11.3/icons/person-fill.svg"
+              alt="Utente"
+              class="rounded-circle border border-2 border-info p-2 bg-secondary-subtle flex-shrink-0"
+              width="42"
+              height="42"
+            />
+            <div>
+              <h6 class="mb-1 fw-bold">Username</h6>
+              <p class="mb-0 small">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3 mb-4">
+            <img
+              src="https://cdn.jsdelivr.net/gh/twbs/icons@1.11.3/icons/person-fill.svg"
+              alt="Utente"
+              class="rounded-circle border border-2 border-info p-2 bg-secondary-subtle flex-shrink-0"
+              width="42"
+              height="42"
+            />
+            <div>
+              <h6 class="mb-1 fw-bold">Username</h6>
+              <p class="mb-0 small">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-start gap-3">
+            <img
+              src="https://cdn.jsdelivr.net/gh/twbs/icons@1.11.3/icons/person-fill.svg"
+              alt="Utente"
+              class="rounded-circle border border-2 border-info p-2 bg-secondary-subtle flex-shrink-0"
+              width="42"
+              height="42"
+            />
+            <div>
+              <h6 class="mb-1 fw-bold">Username</h6>
+              <p class="mb-0 small">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Actions -->
+      <section class="pb-4">
+        <div class="container">
+          <div class="d-flex flex-wrap gap-2 justify-content-center">
+            <button id="countTripsBtn" class="btn btn-outline-secondary btn-sm">
+              Conta viaggi
+            </button>
+            <button id="removeCardsBtn" class="btn btn-outline-danger btn-sm">
+              Rimuovi tutte le card
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5 mt-4">
+      <div class="container">
+        <button
+          class="btn btn-outline-secondary btn-sm mb-4"
+          data-bs-toggle="modal"
+          data-bs-target="#contactModal"
+        >
+          Contattaci
+        </button>
+        <p class="small mb-0">© 2026 X-Y. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModalLabel">Contattaci</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Chiudi"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="nome@email.com"
+                />
+              </div>
+              <div class="mb-0">
+                <label for="messageInput" class="form-label">Messaggio</label>
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  rows="4"
+                  placeholder="Scrivi qui il tuo messaggio..."
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Chiudi
+            </button>
+            <button type="button" class="btn btn-info text-white fw-bold">
+              Invia
             </button>
           </div>
         </div>
       </div>
-
-      <div class="container">
-        <h3 class="mb-2">Saldi</h3>
-        <div class="row g-4">
-          <!-- row contenidore de i cards -->
-          <div class="col-12 col-md-6 col-lg-3">
-            <!-- 1col -->
-            <div class="card h-100 border border-3 border-info">
-              <img
-                src="./images/cuzco.jpg"
-                class="card-img-top"
-                alt="Destinazione"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cuzco</h5>
-                <p class="card-text">Scopri questa città millenaria</p>
-                <a href="#" class="btn btn-info text-dark">Prenota</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <!-- 2col -->
-            <div class="card h-100 border border-3 border-info">
-              <img
-                src="./images/cuzco.jpg"
-                class="card-img-top"
-                alt="Destinazione"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cuzco</h5>
-                <p class="card-text">Scopri questa città millenaria</p>
-                <a href="#" class="btn btn-info text-dark">Prenota</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <!-- 3col -->
-            <div class="card h-100 border border-3 border-info">
-              <img
-                src="./images/cuzco.jpg"
-                class="card-img-top"
-                alt="Destinazione"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cuzco</h5>
-                <p class="card-text">Scopri questa città millenaria</p>
-                <a href="#" class="btn btn-info text-dark">Prenota</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3">
-            <!-- 4col -->
-            <div class="card h-100 border border-3 border-info">
-              <img
-                src="./images/cuzco.jpg"
-                class="card-img-top"
-                alt="Destinazione"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Cuzco</h5>
-                <p class="card-text">Scopri questa città millenaria</p>
-                <a href="#" class="btn btn-info text-dark">Prenota</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <h3 class="mb-2">Welcome Summer</h3>
-          <div class="row g-4">
-            <div class="col-6 col-lg-4"><!-- 1col -->
-              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
-                <img
-                  src="./images/cuzco.jpg"
-                  class="card-img-top"
-                  alt="Destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cuzco</h5>
-                  <p class="card-text">Scopri questa città millenaria</p>
-                  <a href="#" class="btn btn-info text-dark">Prenota</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4"><!-- 2col -->
-              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
-                <img
-                  src="./images/cuzco.jpg"
-                  class="card-img-top"
-                  alt="Destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cuzco</h5>
-                  <p class="card-text">Scopri questa città millenaria</p>
-                  <a href="#" class="btn btn-info text-dark">Prenota</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4"><!-- 3col -->
-              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
-                <img
-                  src="./images/cuzco.jpg"
-                  class="card-img-top"
-                  alt="Destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cuzco</h5>
-                  <p class="card-text">Scopri questa città millenaria</p>
-                  <a href="#" class="btn btn-info text-dark">Prenota</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4"><!-- 4col -->
-              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
-                <img
-                  src="./images/cuzco.jpg"
-                  class="card-img-top"
-                  alt="Destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cuzco</h5>
-                  <p class="card-text">Scopri questa città millenaria</p>
-                  <a href="#" class="btn btn-info text-dark">Prenota</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4"><!-- 5col -->
-              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
-                <img
-                  src="./images/cuzco.jpg"
-                  class="card-img-top"
-                  alt="Destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cuzco</h5>
-                  <p class="card-text">Scopri questa città millenaria</p>
-                  <a href="#" class="btn btn-info text-dark">Prenota</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-lg-4"><!-- 6col -->
-              <div class="card h-100 border border-3 border-info position-relative" style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
-                <a href="#" class="btn btn-info text-light position-absolute top-4 end-0 bg-danger border border-0 width-auto rounded-pill">Hot</a>
-                <img
-                  src="./images/cuzco.jpg"
-                  class="card-img-top"
-                  alt="Destinazione"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Cuzco</h5>
-                  <p class="card-text">Scopri questa città millenaria</p>
-                  <a href="#" class="btn btn-info text-dark">Prenota</a>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="mt-5 py-4 bg-body-tertiary text-center">
-      <p class="mb-0">© 2026 My Travels</p>
-    </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      document.querySelectorAll(".welcome-card").forEach(function (card) {
+        const badge = document.createElement("span");
+        badge.className =
+          "badge text-bg-danger position-absolute top-0 end-0 m-2";
+        badge.textContent = "HOT";
+        card.appendChild(badge);
+      });
+
+      document
+        .getElementById("countTripsBtn")
+        .addEventListener("click", function () {
+          const totalTrips = document.querySelectorAll(".travel-card").length;
+          alert("Numero di viaggi presenti nella pagina: " + totalTrips);
+        });
+
+      document
+        .getElementById("removeCardsBtn")
+        .addEventListener("click", function () {
+          document.querySelectorAll(".travel-card").forEach(function (card) {
+            card.remove();
+          });
+        });
+    </script>
   </body>
 </html>
-2
